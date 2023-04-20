@@ -1,0 +1,54 @@
+@mixin my-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.flight_icon {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0 33px;
+
+  .flight_text {
+    @include my-text();
+  }
+}
+.car_icon {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0 33px;
+}
+.car_text {
+  @include my-text();
+}
+.golobe_logo {
+  padding: 40px 0px 0px 0px !important;
+}
+.Navbar.Collapse {
+  flex-grow: 0 !important;
+}
+
+.main_buttons {
+  display: flex !important;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 168px 0px 0px !important;
+  .login {
+    @include my-text();
+  }
+  .signup_button {
+    height: 48px;
+    width: 104px;
+    border-radius: 8px;
+    border-color: none;
+    @include my-text();
+    color: black !important;
+    &:hover {
+      background-color: transparent;
+      color: white !important;
+    }
+  }
+}

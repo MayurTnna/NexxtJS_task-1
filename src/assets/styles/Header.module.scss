@@ -1,0 +1,50 @@
+@mixin my-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.globe_main {
+  padding: 30px 30px 0 30px;
+
+  .globe_container {
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.6)),
+      url("../images/Rectangle\ 31\ 12.30.46\ PM.svg");
+    background-size: cover;
+    min-height: 599px;
+    background-position: 50%;
+    border-radius: 20px;
+  }
+}
+.main_help {
+  text-align: center;
+  padding: 60px 0 0 0;
+  .help_other {
+    font-family: "TradeGothic LT Extended";
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .live {
+    font-family: "TradeGothic LT Extended";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 101px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .special_text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,78 @@
+@mixin flight_stay_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+.flight_stay_container {
+  isolation: isolate;
+  width: 100%;
+  max-width: 1232px;
+  height: 280px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+  border-radius: 16px;
+  margin-top: -100px;
+  .flight_stay {
+    padding: 30px 0px 0px 33px;
+    display: flex;
+    align-items: center;
+  }
+  .flight {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    border-bottom: 4px solid transparent;
+    .flight_text {
+      @include flight_stay_text();
+    }
+    &:hover {
+      border-bottom: 4px solid #8dd3bb;
+    }
+  }
+  .stays {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    border-bottom: 4px solid transparent;
+    .stays_text {
+      @include flight_stay_text();
+    }
+    &:hover {
+      border-bottom: 4px solid #8dd3bb;
+    }
+  }
+  .flight_stay_border {
+    width: 48px;
+    height: 0px;
+    border: 1px solid #d7e2ee;
+    transform: rotate(90deg);
+  }
+  .from_to_container {
+    padding: 72px 0px 0px 32px;
+    .from_to {
+      width: 324px;
+      height: 56px;
+      background: #ffffff;
+      border: 1px solid #79747e;
+      border-radius: 4px;
+      position: relative;
+      .fieldset_text {
+        position: absolute;
+        top: -12px;
+        left: 10px;
+        background: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #112211;
+      }
+      .lahore_karachi{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+      }
+    }
+  }
+}
