@@ -8,6 +8,7 @@ import logo from "../assets/images/Vector.svg";
 import logo2 from "../assets/images/Vector2.svg";
 import main_logo from "../assets/images/main-logo.svg";
 
+
 const NavBar = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className=" my-2 my-lg-0"
+              className="  my-2 my-lg-0"
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
@@ -33,7 +34,7 @@ const NavBar = () => {
                 </Nav.Link>
               </div>
             </Nav>
-            <Nav.Link href="#" className={`mx-auto  ${styles.golobe_logo}`}>
+            <Nav.Link href="#" className={`mx-auto ${styles.golobe_logo}`}>
               <Image src={main_logo} alt="main-logo" />
             </Nav.Link>
             <div className={styles.main_buttons}>

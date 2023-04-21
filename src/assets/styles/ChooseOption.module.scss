@@ -1,15 +1,9 @@
-@mixin flight_stay_text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #112211;
-}
+@import "./mixins.scss";
+
 .flight_stay_container {
-  isolation: isolate;
   width: 100%;
-  max-width: 1232px;
-  height: 280px;
+  height: 100%;
+
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
   border-radius: 16px;
@@ -20,10 +14,7 @@
     align-items: center;
   }
   .flight {
-    display: flex;
-    justify-content: center;
-    gap: 9px;
-    border-bottom: 4px solid transparent;
+    @include flight_stay_main();
     .flight_text {
       @include flight_stay_text();
     }
@@ -32,10 +23,7 @@
     }
   }
   .stays {
-    display: flex;
-    justify-content: center;
-    gap: 9px;
-    border-bottom: 4px solid transparent;
+    @include flight_stay_main();
     .stays_text {
       @include flight_stay_text();
     }
@@ -49,29 +37,138 @@
     border: 1px solid #d7e2ee;
     transform: rotate(90deg);
   }
-  .from_to_container {
-    padding: 72px 0px 0px 32px;
-    .from_to {
-      width: 324px;
-      height: 56px;
-      background: #ffffff;
-      border: 1px solid #79747e;
-      border-radius: 4px;
-      position: relative;
-      .fieldset_text {
-        position: absolute;
-        top: -12px;
-        left: 10px;
-        background: white;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        color: #112211;
+
+  .booking_section {
+    padding: 33px 0px 0px 0px;
+    display: flex;
+    @media screen and (max-width: 1400px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 20px;
+    }
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      row-gap: 20px;
+      align-content: center;
+      align-items: center;
+      padding: 2px 0px 0px 0px;
+    }
+
+    .from_to_container {
+      padding: 0px 0px 0px 32px;
+      .from_to {
+        width: 324px;
+        height: 56px;
+        background: #ffffff;
+        border: 1px solid #79747e;
+        border-radius: 4px;
+        position: relative;
+        .fieldset_text {
+          @include fieldset_text();
+        }
+        .lahore_karachi {
+          display: flex;
+          justify-content: space-around;
+        }
       }
-      .lahore_karachi{
+    }
+    .trip_container {
+      padding: 0px 0px 0px 24px;
+      .trip {
+        width: 140px;
+        height: 56px;
+        background: #ffffff;
+        border: 1px solid #79747e;
+        border-radius: 4px;
+        position: relative;
+
+        .fieldset_trip {
+          @include fieldset_text();
+        }
+        .trip_button {
+          display: flex !important;
+          justify-content: space-around;
+        }
+      }
+    }
+    .depart_return_container {
+      padding: 0px 0px 0px 24px;
+      .depart_return {
+        width: 324px;
+        height: 56px;
+        background: #ffffff;
+        border: 1px solid #79747e;
+        border-radius: 4px;
+        position: relative;
+
+        .fieldset_depart_return {
+          @include fieldset_text();
+        }
+        .date {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+    .passenger_class_container {
+      padding: 0px 0px 0px 24px;
+      .passenger_class {
+        width: 324px;
+        height: 56px;
+        background: #ffffff;
+        border: 1px solid #79747e;
+        border-radius: 4px;
+        position: relative;
+
+        .fieldset_passenger_class {
+          @include fieldset_text();
+        }
+        .return {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  .promo_flight {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    padding-right: 32px;
+    .promo_plus {
+      padding: 52px 0px 0px 0px;
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      .promo_text {
+        @include promo_flight_text();
+      }
+    }
+    .show_flight {
+      padding: 32px 0px 32px 0px !important;
+      .button_tele {
         display: flex;
-        align-items: center;
-        justify-content: space-around
+        width: 144px;
+        height: 48px;
+        background: #8dd3bb;
+        border-radius: 4px;
+        justify-content: center;
+        gap: 5px;
+        .show_flight_text {
+          @include promo_flight_text();
+          &:hover {
+            color: rgb(13, 13, 13) !important;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+          color: white !important;
+        }
       }
     }
   }

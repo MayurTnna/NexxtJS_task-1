@@ -1,0 +1,60 @@
+@mixin my-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+@mixin flight_stay_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+@mixin flight_stay_main {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  border-bottom: 4px solid transparent;
+}
+@mixin fieldset_text {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #112211;
+}
+@mixin promo_flight_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+}
+@mixin card_container {
+  max-width: 389.33px;
+  // height: 122px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 16px;
+}
+@mixin destination_city_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+  opacity: 0.7;
+}
+@mixin vehicle_option {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+}

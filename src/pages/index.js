@@ -1,4 +1,5 @@
 import ChooseOption from "@/components/ChooseOption";
+import Destination from "@/components/Destination";
 import Header from "@/components/Header";
 
 
@@ -7,6 +8,7 @@ const index = () => {
     <>
       <Header />
       <ChooseOption/>
+      <Destination/>
     </>
   );
 };

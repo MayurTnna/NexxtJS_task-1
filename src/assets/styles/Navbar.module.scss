@@ -1,10 +1,4 @@
-@mixin my-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
+@import "./mixins.scss";
 .flight_icon {
   display: flex;
   align-items: center;
