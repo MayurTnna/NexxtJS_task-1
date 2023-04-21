@@ -1,0 +1,115 @@
+.review_main {
+  padding: 70px 0px 0px 0px;
+  .header_section {
+    display: flex;
+    justify-content: space-between;
+    .title1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #000000;
+    }
+    .title2 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #112211;
+    }
+    .right_button_main {
+      width: 149px;
+      height: 40px;
+      border: 1px solid #8dd3bb;
+      border-radius: 4px;
+      .see_more_text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #112211;
+      }
+      &:hover {
+        background-color: #8dd3bb;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .card_container {
+    max-width: 425px;
+    min-height: 586px;
+    background: #ffffff;
+    box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.1);
+    border-radius: 20px;
+    .card_title {
+      font-family: "TradeGothic LT Extended";
+      font-weight: 700 !important;
+      font-size: 24px;
+      color: #112211;
+      text-align: center;
+      padding: 24px 24px 0px 24px;
+      margin: 0;
+    }
+    .second_card_title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      // line-height: 17px;
+      color: #112211;
+      opacity: 0.5;
+      text-align: center;
+      padding: 24px 24px 0px 24px;
+      margin: 0;
+    }
+    .view_more {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: right;
+      color: #112211;
+      padding: 12px 24px 0px 0px;
+      margin: 0;
+    }
+    .star_container {
+      padding: 18px 0px 0px 25px;
+      .star_space {
+        margin-right: 13.5px;
+      }
+    }
+    .olga {
+      font-family: "TradeGothic LT Extended";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: #112211;
+      padding: 21.5px 0px 0px 24px;
+      margin: 0;
+    }
+    .weave {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #112211;
+      opacity: 0.5;
+      margin: 0;
+      padding: 4px 0px 0px 24px;
+    }
+    .google_container {
+      display: flex;
+      padding: 14px 0px 0px 26px;
+      gap: 10px;
+      .google_text{
+        margin: 0;
+      }
+    }
+    .review_image {
+      padding: 44.5px 24px 24px 24px;
+    }
+  }
+}

@@ -64,13 +64,15 @@ const ChooseOption = () => {
           </div>
           <div className={styles.promo_flight}>
             <div className={styles.promo_plus}>
-              <Image src={plus}/>
+              <Image src={plus} />
               <p className={styles.promo_text}>Add Promo Code</p>
             </div>
             <div className={styles.show_flight}>
               <div className={` ${styles.button_tele}`}>
-                <Image className="mt-3" src={telegram}/>
-                <p className={` mt-3 ${styles.show_flight_text}`}>Show Flights</p>
+                <Image className="mt-3" src={telegram} />
+                <p className={` mt-3 ${styles.show_flight_text}`}>
+                  Show Flights
+                </p>
               </div>
             </div>
           </div>

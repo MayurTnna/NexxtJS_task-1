@@ -1,0 +1,117 @@
+@import "./mixins.scss";
+.flight_hotel_main {
+  padding: 80px 0px 0px 0px;
+
+  .flight_container {
+    max-width: 604px;
+    min-height: 559px;
+    // width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(18, 18, 18, 0.75) 48.67%
+      ),
+      url("../images/flights.svg");
+    .flight_main_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 372px 0px 0px 0px;
+
+      text-align: center;
+      justify-content: last baseline;
+      .flight_text {
+        font-family: "TradeGothic LT Extended";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 51px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .flight_description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .show_flight {
+        .button_tele {
+          display: flex;
+          width: 144px;
+          height: 48px;
+          background: #8dd3bb;
+          border-radius: 4px;
+          justify-content: center;
+          gap: 5px;
+          .show_flight_text {
+            @include promo_flight_text();
+          }
+          &:hover {
+            background-color: transparent;
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+  .hotel_container {
+    max-width: 604px;
+    height: 559px;
+    // width: 100%;-
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(18, 18, 18, 0.75) 48.67%
+      ),
+      url("../images/hotel.svg");
+    .flight_main_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 372px 0px 0px 0px;
+
+      text-align: center;
+      justify-content: last baseline;
+      .flight_text {
+        font-family: "TradeGothic LT Extended";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 51px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .flight_description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .show_flight {
+        .button_tele {
+          display: flex;
+          width: 144px;
+          height: 48px;
+          background: #8dd3bb;
+          border-radius: 4px;
+          justify-content: center;
+          gap: 5px;
+          .show_flight_text {
+            @include promo_flight_text();
+          }
+          &:hover {
+            background-color: transparent;
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+}

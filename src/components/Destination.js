@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../assets/styles/destination.module.scss";
+import Image from "next/image";
 import destination1 from "../assets/images/destination1.svg";
 import destination2 from "../assets/images/destination2.svg";
 import destination3 from "../assets/images/destination3.svg";
@@ -9,8 +10,8 @@ import destination6 from "../assets/images/destination6.svg";
 import destination7 from "../assets/images/destination7.svg";
 import destination8 from "../assets/images/destination8.svg";
 import destination9 from "../assets/images/destination9.svg";
-import Image from "next/image";
 import dot from "../assets/images/dot.svg";
+import FlightHotelImage from "./FlightHotelImage";
 
 const Destination = () => {
   return (
@@ -32,7 +33,7 @@ const Destination = () => {
           </div>
           <div className={styles.destination_main}>
             <div className="row  gy-4">
-              <div className="col  col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col  col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -53,7 +54,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4 col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -74,7 +75,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -95,7 +96,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -116,7 +117,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -137,7 +138,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -158,7 +159,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -179,7 +180,7 @@ const Destination = () => {
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-4 col-sm-12 col-md-6 col-sm-12">
+              <div className="col col-lg-4  col-md-6 col-sm-12">
                 <div className={styles.card_container}>
                   <div className={styles.image_text}>
                     <Image
@@ -224,6 +225,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
+        <FlightHotelImage />
       </div>
     </>
   );
