@@ -42,7 +42,7 @@
   .card_container {
     max-width: 425px !important;
     min-height: 586px !important;
-    background: #FFFFFF;
+    background: #ffffff!important;
     box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.1);
     border-radius: 20px;
     box-shadow: 26px 26px rgb(141, 211, 187);
@@ -113,10 +113,6 @@
     }
     .review_image {
       padding: 44.5px 24px 24px 24px;
-      Image {
-        max-width: 377px;
-        height: 200px;
-      }
     }
   }
   .slider_main {

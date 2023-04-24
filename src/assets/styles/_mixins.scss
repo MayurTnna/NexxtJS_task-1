@@ -38,7 +38,6 @@
 }
 @mixin card_container {
   max-width: 389.33px;
-  // height: 122px;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
   border-radius: 16px;
@@ -58,7 +57,7 @@
   line-height: 17px;
   color: #112211;
 }
-@mixin newsletter_title_text{
+@mixin newsletter_title_text {
   font-family: "TradeGothic LT Extended";
   font-style: normal;
   font-weight: 700;
@@ -66,4 +65,21 @@
   color: #112211;
   opacity: 0.8;
   margin: 0;
+}
+@mixin footer_header {
+  font-family: "TradeGothic LT Extended";
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+@mixin footer_header_description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+  opacity: 0.7;
 }

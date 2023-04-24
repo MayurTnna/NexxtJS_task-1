@@ -1,6 +1,8 @@
 @import "./mixins.scss";
 .newsletter_main_container {
-  padding: 90px 0 0 0;
+  padding-top: 90px;
+  z-index: 999;
+  position: relative;
 
   .newsletter_container {
     height: 100% !important;
@@ -42,7 +44,7 @@
     .travel_title_main {
       padding: 24px 0pc 0px 24px;
       .travel {
-        @include newsletter_title_text;
+        @include newsletter_title_text();
       }
       .travel_description {
         font-family: "Montserrat";

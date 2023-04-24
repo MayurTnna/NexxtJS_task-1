@@ -31,9 +31,8 @@ const Review = () => {
             </div>
           </div>
           <Swiper
-            
             spaceBetween={50}
-            slidesPerView={2}
+            slidesPerView={3}
             autoplay={{
               delay: 5000,
             }}
@@ -43,7 +42,7 @@ const Review = () => {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Pagination]}
-             className="mySwiper" 
+            className="mySwiper"
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -82,10 +81,10 @@ const Review = () => {
                   <p className={styles.google_text}>Google</p>
                 </div>
                 <div className={styles.review_image}>
-                  <Image src={review1} />
+                  <Image className="img-fluid " src={review1} />
                 </div>
               </div>
-            </SwiperSlide  >
+            </SwiperSlide>
             <SwiperSlide className={styles.slider_main}>
               <div className={styles.card_container}>
                 <p className={styles.card_title}>
@@ -113,7 +112,7 @@ const Review = () => {
                   <p className={styles.google_text}>Google</p>
                 </div>
                 <div className={styles.review_image}>
-                  <Image src={review2} />
+                  <Image className="img-fluid " src={review2} />
                 </div>
               </div>
             </SwiperSlide>
@@ -143,7 +142,37 @@ const Review = () => {
                   <p className={styles.google_text}>Google</p>
                 </div>
                 <div className={styles.review_image}>
-                  <Image src={review3} />
+                  <Image className="img-fluid rounded-3" src={review3} />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.slider_main}>
+              <div className={styles.card_container}>
+                <p className={styles.card_title}>
+                  “A real sense of community, nurtured”
+                </p>
+                <p className={styles.second_card_title}>
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for helping me always,
+                  even when I was out of the country. And always available when
+                  needed.
+                </p>
+                <p className={styles.view_more}>View more</p>
+                <div className={styles.star_container}>
+                  <Image className={styles.star_space} src={star} />
+                  <Image className={styles.star_space} src={star} />
+                  <Image className={styles.star_space} src={star} />
+                  <Image className={styles.star_space} src={star} />
+                  <Image className={styles.star_space} src={star} />
+                </div>
+                <p className={styles.olga}>Olga</p>
+                <p className={styles.weave}>Weave Studios – Kai Tak</p>
+                <div className={styles.google_container}>
+                  <Image className={styles.image} src={google} />
+                  <p className={styles.google_text}>Google</p>
+                </div>
+                <div className={` ${styles.review_image}`}>
+                  <Image className="img-fluid" src={review1} />
                 </div>
               </div>
             </SwiperSlide>

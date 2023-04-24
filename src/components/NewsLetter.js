@@ -23,7 +23,7 @@ const NewsLetter = () => {
               <div className={styles.input_main_container}>
                 <input
                   type="text"
-                  placeholder="your email address"
+                  placeholder="    your email address"
                   className={styles.input_container}
                 />
                 <div className={styles.button_container}>

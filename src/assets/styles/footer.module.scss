@@ -1,0 +1,23 @@
+@import "./mixins.scss";
+.footer_container {
+  margin-top: -150px;
+  z-index: -1;
+  .footer_color_container {
+    height: 100%;
+    background: #8dd3bb;
+    .footer_item_container {
+      padding: 222px 0px 0px 104px;
+      @media screen and (max-width: 990px) {
+        padding-left: 0px;
+      }
+      .destination {
+        .footer_header {
+          @include footer_header;
+        }
+        .footer_header_description {
+          @include footer_header_description();
+        }
+      }
+    }
+  }
+}
