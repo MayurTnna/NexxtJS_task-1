@@ -8,7 +8,6 @@ import logo from "../assets/images/Vector.svg";
 import logo2 from "../assets/images/Vector2.svg";
 import main_logo from "../assets/images/main-logo.svg";
 
-
 const NavBar = () => {
   return (
     <>
