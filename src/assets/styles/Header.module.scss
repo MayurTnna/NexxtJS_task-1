@@ -22,6 +22,10 @@
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   .live {
     font-family: "TradeGothic LT Extended";
@@ -31,6 +35,10 @@
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    @media (max-width: 768px) {
+      font-size: 56px;
+      line-height: 70px;
+    }
   }
   .special_text {
     font-size: 20px;

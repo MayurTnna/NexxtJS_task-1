@@ -6,8 +6,10 @@ import Image from "next/image";
 const FlightHotelImage = () => {
   return (
     <div className={styles.flight_hotel_main}>
-      <div className="row gy-4 ">
-        <div className={` col-xl-6 col-lg-12  ${styles.flight_container}`}>
+      <div className="row gy-5 gx-3 ">
+        <div
+          className={` col-xl-6 col-lg-12 mx-auto  ${styles.flight_container}`}
+        >
           <div className={styles.flight_main_text}>
             <p className={styles.flight_text}>Flights</p>
             <p className={styles.flight_description}>
@@ -24,7 +26,7 @@ const FlightHotelImage = () => {
           </div>
         </div>
         <div
-          className={` col-xl-6 col-lg-12 mx-auto  ${styles.hotel_container}`}
+          className={` col-xl-6 col-lg-12 mx-auto ${styles.hotel_container}`}
         >
           <div className={styles.flight_main_text}>
             <p className={styles.flight_text}>Hotels</p>
